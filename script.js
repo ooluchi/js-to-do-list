@@ -23,11 +23,10 @@ const displayTasks = () => {
     if (Object.keys(localStorage).length > 0) {
         tasksDiv.style.display = "inline-block";
     }
-    }else {
+    } else {
         taskDiv.style.display= "none";
     }
-    tasksDiv.innerHTML = ""
-
+    
     let task = Object.keys(localStorage);
     tasks = tasks.sort();
 
@@ -41,6 +40,10 @@ const displayTasks = () => {
         taskInnerDiv.innerHTML = `<span id="taskname`
     }
 };
+
+    tasksDiv.innerHTML = ""
+
+;
 
 // function to remove an item from the list
 function removeItem(item) {
